@@ -62,6 +62,7 @@
     </Compile>
     <Compile Include="Core\Messenger.cs" />
     <Compile Include="Core\WindowFactory.cs" />
+    <Compile Include="Models\SomeData.cs" />
     <Compile Include="ViewModels\ChildWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\ChildWindow.xaml.cs">

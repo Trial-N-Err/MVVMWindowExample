@@ -1,4 +1,5 @@
-﻿using MVVMWindowExample.ViewModels;
+﻿using MVVMWindowExample.Models;
+using MVVMWindowExample.ViewModels;
 using MVVMWindowExample.Views;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace MVVMWindowExample.Core
     public class WindowFactory
     {
         private readonly IWindowFactory _WindowFactory;
+        
         public bool IsOpen { get; set; }
         public RelayCommand OpenNewWindow { get; set; }
         public WindowFactory(IWindowFactory windowFactory)
@@ -35,6 +37,11 @@ namespace MVVMWindowExample.Core
 
         public void DoCloseWindow(string parameter)
         {
+            if(parameter.Contains("ChildWindow"))
+            {
+                _WindowFactory.CloseWindow();
+                
+            }
             IsOpen = false;
         }
 
@@ -43,32 +50,38 @@ namespace MVVMWindowExample.Core
 
     public interface IWindowFactory
     {
-        bool CreateNewWindow();
-        bool CloseWindow();
+        void CreateNewWindow();
+        void CloseWindow();
     }
 
     // Various windows to create
     public class ChildWindowFactory : IWindowFactory
     {
-        public bool CreateNewWindow()
+        public ChildWindowViewModel vm { get; private set; }
+        private ChildWindow window;
+        public void CreateNewWindow()
         {
-            ChildWindow window = new ChildWindow
-            {
-                DataContext = new ChildWindowViewModel()
-            };
+            vm = new ChildWindowViewModel();
+            window = new ChildWindow();
+            window.DataContext = vm;
+            window.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             window.Show();
             window.Closing += Window_Closing;
-            return true;
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+
+        public void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            CloseWindow();
+            if(sender != null)
+            {
+                Messenger.Default.Send(" ");
+            }
+            
         }
-        public bool CloseWindow()
+        public void CloseWindow()
         {
-            Messenger.Default.Send("true");
-            return true;
+            window.Closing -= Window_Closing;
+            window.Close();
         }
     }
 }

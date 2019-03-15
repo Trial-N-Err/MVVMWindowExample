@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVMWindowExample.Views"
         mc:Ignorable="d"
-        Title="ChildWindow" Height="450" Width="800">
-    <Grid>
+        Title="ChildWindow" Height="200" Width="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+            </Style>
+            <Style TargetType="ComboBox">
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="Width" Value="150" />
+                <Setter Property="Height" Value="25" />
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="Width" Value="100" />
+                <Setter Property="Height" Value="25" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="Width" Value="100" />
+                <Setter Property="Height" Value="25" />
+            </Style>
+        </Grid.Resources>
         
+        <Label Content="Index:" Grid.Column="0" Grid.Row="0" />
+        <TextBox Text="{Binding Index}" Grid.Column="1" Grid.Row="0"/>
+        
+        <Label Content="Property 1:" Grid.Column="0" Grid.Row="1"/>
+        <TextBox Text="{Binding Property1}" Grid.Column="1" Grid.Row="1"/>
+
+        <Button Content="Save" Command="{Binding SaveDataCommand}" Grid.Column="0" Grid.Row="2"/>
+        <Button Content="Cancel" Command="{Binding CancelCommand}" Grid.Column="1" Grid.Row="2"/>
     </Grid>
 </Window>
