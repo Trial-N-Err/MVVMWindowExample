@@ -1,0 +1,17 @@
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample.csprojAssemblyReference.cache
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\App.g.cs
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample_MarkupCompile.cache
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample.Properties.Resources.resources
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample.csproj.GenerateResource.cache
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample.csproj.CoreCompileInputs.cache
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\Views\MainWindow.g.cs
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample_MarkupCompile.lref
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\bin\Debug\MVVMWindowExample.exe.config
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\bin\Debug\MVVMWindowExample.exe
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\bin\Debug\MVVMWindowExample.pdb
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\Views\MainWindow.baml
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample.g.resources
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample.exe
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\MVVMWindowExample.pdb
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\Views\ChildWindow.g.cs
+C:\Users\cruffo.AP\Documents\Visual Studio 2017\Projects\MVVMWindowExample\MVVMWindowExample\obj\Debug\Views\ChildWindow.baml
